@@ -1,0 +1,10 @@
+<%= link_to "Home", root_path %>
+<hr>
+<h1>Write a New Post</h1>
+<%= form_for @post do |f| %>
+	<%= f.text_field :title, placeholder: "Title" %>
+	<br>
+	<%= f.text_field :content, placeholder: "Write your post here." %>
+	<br>
+	<%= f.submit "Submit Post" %>
+<% end %>

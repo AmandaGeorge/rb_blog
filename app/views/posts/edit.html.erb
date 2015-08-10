@@ -1,0 +1,9 @@
+<h1>Edit Post</h1>
+
+<%= form_for @post do |f| %>
+	<%= f.text_field :title, placeholder: "Title" %>
+	<br>
+	<%= f.text_field :content, placeholder: "Content" %>
+	<br>
+	<%= f.submit "Save Post" %>
+<% end %>
